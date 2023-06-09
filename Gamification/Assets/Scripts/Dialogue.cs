@@ -81,7 +81,6 @@ public class Dialogue : MonoBehaviour
     
     public void VariantFalse()
     {
-        player.WrongAnswer();
         string[] temp = {"Result"};
         FindNeed(temp);
         manTalking.text = "Да, устроит. Спасибо! Макет сбросил";

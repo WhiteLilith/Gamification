@@ -1,30 +1,22 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    private int _score;
+    [SerializeField] private int[] score = {6,4,5,12,7,6,6};
 
     public bool showing;
 
-    public void WrongAnswer()
+    public void ChangeScore(int numberOfTask, int scoreToChange)
     {
-        _score -= 5;
+        score[numberOfTask - 1] += scoreToChange;
     }
-
-    public void WrongAnswer(int count)
+    public int[] ReturnScore()
     {
-        _score -= 5 * count;
+        return score;
     }
-
-    public int ReturnScore()
-    {
-        return _score;
-    }
-
 
     private void Start()
     {
-        _score = 100;
+        DontDestroyOnLoad(this);
     }
 }
