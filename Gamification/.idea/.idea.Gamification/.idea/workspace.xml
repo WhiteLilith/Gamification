@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9c24ad4-503b-405a-a59a-8275c37f2a63" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamification/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamification/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/======UI======.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/======UI======.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Office.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Office.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Task1/CheckProcesses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Task1/CheckProcesses.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.probuilder/Settings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Packages/com.unity.testtools.codecoverage/Settings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Desktop Spites/technical card/popup window.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Desktop Spites/technical card/popup window.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Other/TextMesh Pro/Resources/Fonts &amp; Materials/NormalFont.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Other/TextMesh Pro/Resources/Fonts &amp; Materials/NormalFont.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DesktopCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DesktopCanvas.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,6 +151,7 @@
       <workItem from="1673772365349" duration="2006000" />
       <workItem from="1674140221757" duration="3793000" />
       <workItem from="1686295747313" duration="1738000" />
+      <workItem from="1686331345900" duration="609000" />
     </task>
     <servers />
   </component>
