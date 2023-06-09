@@ -13,11 +13,6 @@ public class CheckProcesses : MonoBehaviour
     [SerializeField] private CheckDropDown[] dropDowns;
     [SerializeField] private answerToCheck[] rightAnswers;
 
-    private void Start()
-    {
-        CountRightAnswers();
-    }
-
     public void CountRightAnswers()
     {
         foreach (var dropDown in dropDowns)
@@ -37,6 +32,7 @@ public class CheckProcesses : MonoBehaviour
             if (answer.countedAnswers != answer.countOfAnswers)
             {
                 GetComponent<Player>().ChangeScore(6,-3);
+                return;
             }
         }
     }
