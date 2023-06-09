@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="b9c24ad4-503b-405a-a59a-8275c37f2a63" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Gamification/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Gamification/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ProductMatrix/MatrixPoints.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ProductMatrix/MatrixPoints.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/======UI======.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/======UI======.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/DesktopCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/DesktopCanvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Task1/CheckProcesses.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Task1/CheckProcesses.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Task1/TechCardChecker.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Task1/TechCardChecker.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

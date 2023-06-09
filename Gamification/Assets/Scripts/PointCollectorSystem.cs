@@ -1,6 +1,5 @@
 using TMPro;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class PointCollectorSystem : MonoBehaviour
 {
@@ -23,13 +22,15 @@ public class PointCollectorSystem : MonoBehaviour
 
     private void GetSomePoints()
     {
-        point1 = Random.Range(6, 8);
-        point2 = Random.Range(4, 5);
-        point3 = Random.Range(5, 9);
-        point4 = Random.Range(9, 12);
-        point5 = Random.Range(5, 7);
-        point6 = Random.Range(5, 6);
-        point7 = Random.Range(6, 8);
+        Player playerData = FindObjectOfType<Player>();
+        var score = playerData.ReturnScore();
+        point1 = score[0];
+        point2 = score[1];
+        point3 = score[2];
+        point4 = score[3];
+        point5 = score[4];
+        point6 = score[5];
+        point7 = score[6];
         pointSum = point1 + point2 + point3 + point4 + point5 + point6 + point7;
 
         summaryPointAmount.text = pointSum.ToString();

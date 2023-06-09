@@ -50912,6 +50912,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 218902827803124014}
+  - component: {fileID: 6708327640227264302}
   m_Layer: 5
   m_Name: Technical card
   m_TagString: Untagged
@@ -50940,6 +50941,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &6708327640227264302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902827803124013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b84187d01da8d418f4af35098df549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputFields: []
+  dropdowns: []
+  messageText: {fileID: 218902827506264756}
 --- !u!1 &218902827803973400
 GameObject:
   m_ObjectHideFlags: 0
@@ -73149,6 +73165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 218902828344393874}
+  - component: {fileID: 7364537322330948750}
   m_Layer: 5
   m_Name: Last stage
   m_TagString: Untagged
@@ -73213,6 +73230,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7364537322330948750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902828344393873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f5b4adeba2584646a5552a40abee6de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dropDowns: []
+  rightAnswers: []
 --- !u!1 &218902828345779427
 GameObject:
   m_ObjectHideFlags: 0

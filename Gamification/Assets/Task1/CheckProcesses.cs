@@ -34,7 +34,10 @@ public class CheckProcesses : MonoBehaviour
 
         foreach (var answer in rightAnswers)
         {
-            Debug.Log($"{answer.rightAnswer}: дано{answer.countedAnswers}/надо{answer.countOfAnswers}");
+            if (answer.countedAnswers != answer.countOfAnswers)
+            {
+                GetComponent<Player>().ChangeScore(6,-3);
+            }
         }
     }
 }

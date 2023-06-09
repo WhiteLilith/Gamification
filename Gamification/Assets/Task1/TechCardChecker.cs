@@ -19,9 +19,9 @@ public class TechCardChecker : MonoBehaviour
     [SerializeField] private InputField[] inputFields;
     [SerializeField] private Dropdown[] dropdowns;
 
-    [SerializeField] private TextMeshPro messageText;
+    [SerializeField] private TextMeshProUGUI messageText;
 
-    public string CreateMessage()
+    public void CreateMessage()
     {
         var message = "";
         
@@ -34,7 +34,7 @@ public class TechCardChecker : MonoBehaviour
             if (!dropdown.dropdown.CheckAnswer()) message += $"{dropdown.fieldName}\n";
         }
 
-        return message;
+        messageText.text = message;
     }
 
     public void CheckResult()
