@@ -31,7 +31,7 @@ public class CheckProcesses : MonoBehaviour
         {
             if (answer.countedAnswers != answer.countOfAnswers)
             {
-                GetComponent<Player>().ChangeScore(6,-3);
+                FindObjectOfType<Player>().ChangeScore(6,-3);
                 return;
             }
         }
