@@ -20,6 +20,6 @@ public class MatrixPoints : MonoBehaviour
         Debug.Log(_totalTrueAnswers);
         
         if(_totalTrueAnswers == 8)
-            Debug.Log("XDDD");
+            FindObjectOfType<Player>().ChangeScore(1, 1);
     }
 }

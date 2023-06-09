@@ -258,6 +258,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 420358099}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: SetMap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 45825094}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -2366,6 +2378,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 420358099}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: SetGallery
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 45825094}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
@@ -4623,11 +4647,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 420358097}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -104.48242, y: 20.79364, z: 9.630741}
+  m_LocalPosition: {x: 1042.2896, y: 611.6288, z: 3.5520535}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1185660888}
+  m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &420358099
@@ -4642,7 +4666,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc33ad1d7ec195f4db6550040d6079cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  score: 0500000004000000050000000c000000070000000600000006000000
   showing: 0
+  map: 0
+  gallery: 0
 --- !u!1 &420374558
 GameObject:
   m_ObjectHideFlags: 0
@@ -8467,6 +8494,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 420358099}
+        m_TargetAssemblyTypeName: Player, Assembly-CSharp
+        m_MethodName: CheckBool
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 892143967}
         m_TargetAssemblyTypeName: Pizdec, Assembly-CSharp
         m_MethodName: LoadScene
@@ -13656,9 +13695,8 @@ Transform:
   - {fileID: 868840894}
   - {fileID: 1090595780}
   - {fileID: 1765740590}
-  - {fileID: 420358098}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1186059922
 GameObject:
@@ -20359,7 +20397,7 @@ Transform:
   - {fileID: 952709655}
   - {fileID: 1708600716}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1798309286
 GameObject:

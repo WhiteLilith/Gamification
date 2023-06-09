@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 
 public class TechCardChecker : MonoBehaviour
@@ -18,6 +19,8 @@ public class TechCardChecker : MonoBehaviour
     [SerializeField] private InputField[] inputFields;
     [SerializeField] private Dropdown[] dropdowns;
 
+    [SerializeField] private TextMeshPro messageText;
+
     public string CreateMessage()
     {
         var message = "";
@@ -32,5 +35,11 @@ public class TechCardChecker : MonoBehaviour
         }
 
         return message;
+    }
+
+    public void CheckResult()
+    {
+        if (messageText.text == "") return;
+        FindObjectOfType<Player>().ChangeScore(4, -4);
     }
 }
