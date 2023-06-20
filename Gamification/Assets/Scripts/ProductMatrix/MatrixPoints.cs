@@ -14,8 +14,13 @@ public class MatrixPoints : MonoBehaviour
     {
         foreach (var cell in cells)
         {
-            if (cell.childCount > 0 && !wrongItems.Contains(cell.GetChild(0)))
-                _totalTrueAnswers++;
+            if (cell.childCount > 0)
+            {
+                if (!wrongItems.Contains(cell.GetChild(0)))
+                    _totalTrueAnswers++;
+                else
+                    _totalTrueAnswers--;
+            }
         }
         Debug.Log(_totalTrueAnswers);
         

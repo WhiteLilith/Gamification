@@ -360,10 +360,10 @@ RectTransform:
   m_Father: {fileID: 218902827035021616}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 140.5, y: -376.5}
+  m_SizeDelta: {x: 181, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &218902826554240408
 CanvasRenderer:
@@ -3874,8 +3874,8 @@ GameObject:
   - component: {fileID: 218902826631723816}
   - component: {fileID: 218902826631723819}
   - component: {fileID: 218902826631723818}
-  - component: {fileID: 5975545128192070575}
   - component: {fileID: 3924158109548965979}
+  - component: {fileID: 2047832994537466358}
   m_Layer: 5
   m_Name: approval date
   m_TagString: Untagged
@@ -3942,7 +3942,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5975545128192070575
+--- !u!114 &3924158109548965979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902826631723823}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightVariant: 21.12.2021
+--- !u!114 &2047832994537466358
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3961,7 +3974,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -3973,7 +3986,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -4003,12 +4016,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902826631723818}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -4022,6 +4029,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -4052,19 +4065,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &3924158109548965979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218902826631723823}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightVariant: 21.12.2021
 --- !u!1 &218902826632257947
 GameObject:
   m_ObjectHideFlags: 0
@@ -6455,8 +6455,8 @@ GameObject:
   - component: {fileID: 218902826678864854}
   - component: {fileID: 218902826678864849}
   - component: {fileID: 218902826678864848}
-  - component: {fileID: 218902826678864855}
   - component: {fileID: 5969142065174762632}
+  - component: {fileID: 6470008546044030027}
   m_Layer: 5
   m_Name: number of items per sheet
   m_TagString: Untagged
@@ -6523,7 +6523,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &218902826678864855
+--- !u!114 &5969142065174762632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902826678864853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightVariant: 2
+--- !u!114 &6470008546044030027
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6542,7 +6555,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -6554,7 +6567,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -6564,7 +6577,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 218902826678864848}
-  m_TextViewport: {fileID: 218902827676814378}
+  m_TextViewport: {fileID: 218902827079783800}
   m_TextComponent: {fileID: 218902828029704281}
   m_Placeholder: {fileID: 218902828073168617}
   m_VerticalScrollbar: {fileID: 0}
@@ -6584,12 +6597,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902826678864848}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -6603,6 +6610,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -6633,19 +6646,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &5969142065174762632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218902826678864853}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightVariant: 2
 --- !u!1 &218902826679036852
 GameObject:
   m_ObjectHideFlags: 0
@@ -10037,8 +10037,8 @@ GameObject:
   - component: {fileID: 218902826782895928}
   - component: {fileID: 218902826782895931}
   - component: {fileID: 218902826782895930}
-  - component: {fileID: 218902826782895929}
   - component: {fileID: 2390398639528540273}
+  - component: {fileID: 3323900497564629822}
   m_Layer: 5
   m_Name: number of printing plates
   m_TagString: Untagged
@@ -10105,7 +10105,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &218902826782895929
+--- !u!114 &2390398639528540273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902826782895935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightVariant: 4
+--- !u!114 &3323900497564629822
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10124,7 +10137,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -10136,7 +10149,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -10146,7 +10159,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 218902826782895930}
-  m_TextViewport: {fileID: 218902827101620337}
+  m_TextViewport: {fileID: 218902827079783800}
   m_TextComponent: {fileID: 218902828227970570}
   m_Placeholder: {fileID: 218902826824954578}
   m_VerticalScrollbar: {fileID: 0}
@@ -10166,12 +10179,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902826782895930}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -10185,6 +10192,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -10215,19 +10228,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &2390398639528540273
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218902826782895935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightVariant: 4
 --- !u!1 &218902826786332315
 GameObject:
   m_ObjectHideFlags: 0
@@ -12213,8 +12213,8 @@ GameObject:
   - component: {fileID: 218902826833751382}
   - component: {fileID: 218902826833751377}
   - component: {fileID: 218902826833751376}
-  - component: {fileID: 218902826833751383}
   - component: {fileID: 7820385968006383509}
+  - component: {fileID: 4750663133175024978}
   m_Layer: 5
   m_Name: circulation
   m_TagString: Untagged
@@ -12281,7 +12281,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &218902826833751383
+--- !u!114 &7820385968006383509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902826833751381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightVariant: 1500
+--- !u!114 &4750663133175024978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12300,7 +12313,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -12312,7 +12325,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -12342,12 +12355,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902826833751376}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -12361,6 +12368,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -12391,19 +12404,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &7820385968006383509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218902826833751381}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightVariant: 1500
 --- !u!1 &218902826833832072
 GameObject:
   m_ObjectHideFlags: 0
@@ -23186,10 +23186,10 @@ RectTransform:
   m_Father: {fileID: 218902827035021616}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 486.5, y: -612.5}
+  m_SizeDelta: {x: 181, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &218902827106286532
 CanvasRenderer:
@@ -23350,8 +23350,8 @@ MonoBehaviour:
   m_Interactable: 1
   m_TargetGraphic: {fileID: 218902827117770229}
   m_TextViewport: {fileID: 218902827079783800}
-  m_TextComponent: {fileID: 218902827809624771}
-  m_Placeholder: {fileID: 218902828446750764}
+  m_TextComponent: {fileID: 218902827450051186}
+  m_Placeholder: {fileID: 218902827296815817}
   m_VerticalScrollbar: {fileID: 0}
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
@@ -36201,10 +36201,10 @@ RectTransform:
   m_Father: {fileID: 218902827035021616}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 832.5, y: -376.5}
+  m_SizeDelta: {x: 181, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &218902827443048118
 CanvasRenderer:
@@ -38160,10 +38160,10 @@ RectTransform:
   m_Father: {fileID: 218902827035021616}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 486.5, y: -140.5}
+  m_SizeDelta: {x: 181, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &218902827485781635
 CanvasRenderer:
@@ -42774,8 +42774,8 @@ GameObject:
   - component: {fileID: 218902827563602749}
   - component: {fileID: 218902827563602744}
   - component: {fileID: 218902827563602751}
-  - component: {fileID: 218902827563602750}
   - component: {fileID: 4340496555410784692}
+  - component: {fileID: 8450413551938902385}
   m_Layer: 5
   m_Name: date of complete
   m_TagString: Untagged
@@ -42842,7 +42842,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &218902827563602750
+--- !u!114 &4340496555410784692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902827563602748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightVariant: 14.01.2022
+--- !u!114 &8450413551938902385
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -42861,7 +42874,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -42873,7 +42886,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -42885,7 +42898,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 218902827563602751}
   m_TextViewport: {fileID: 218902828443011561}
   m_TextComponent: {fileID: 218902828496242459}
-  m_Placeholder: {fileID: 218902827141644927}
+  m_Placeholder: {fileID: 218902827379252579}
   m_VerticalScrollbar: {fileID: 0}
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
@@ -42903,12 +42916,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902827563602751}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -42922,6 +42929,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -42952,19 +42965,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &4340496555410784692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218902827563602748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightVariant: 14.01.2022
 --- !u!1 &218902827563806468
 GameObject:
   m_ObjectHideFlags: 0
@@ -43770,10 +43770,10 @@ RectTransform:
   m_Father: {fileID: 218902827035021616}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 140.5, y: -612.5}
+  m_SizeDelta: {x: 181, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &218902827585098966
 CanvasRenderer:
@@ -44780,7 +44780,7 @@ GameObject:
   - component: {fileID: 218902827628048515}
   - component: {fileID: 218902827628048526}
   - component: {fileID: 218902827628048525}
-  - component: {fileID: 218902827628048524}
+  - component: {fileID: 869715695940880011}
   - component: {fileID: 3158570049572949228}
   m_Layer: 5
   m_Name: colorfulness
@@ -44848,7 +44848,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &218902827628048524
+--- !u!114 &869715695940880011
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -44867,7 +44867,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -44879,7 +44879,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -44909,12 +44909,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902827628048525}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -44928,6 +44922,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -44970,7 +44970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rightVariant: '-'
+  rightVariant: 4+0
 --- !u!1 &218902827629696002
 GameObject:
   m_ObjectHideFlags: 0
@@ -45736,10 +45736,10 @@ RectTransform:
   m_Father: {fileID: 218902827035021616}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 140.5, y: -140.5}
+  m_SizeDelta: {x: 181, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &218902827645718839
 CanvasRenderer:
@@ -49892,8 +49892,8 @@ GameObject:
   - component: {fileID: 218902827754547215}
   - component: {fileID: 218902827754547210}
   - component: {fileID: 218902827754547209}
-  - component: {fileID: 6664251066606752259}
   - component: {fileID: 1419559286182219465}
+  - component: {fileID: 2414639746954276874}
   m_Layer: 5
   m_Name: product coloration
   m_TagString: Untagged
@@ -49960,7 +49960,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &6664251066606752259
+--- !u!114 &1419559286182219465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902827754547214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightVariant: 4+0
+--- !u!114 &2414639746954276874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -49979,7 +49992,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -49991,7 +50004,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -50001,7 +50014,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 218902827754547209}
-  m_TextViewport: {fileID: 1166710468066531402}
+  m_TextViewport: {fileID: 218902827079783800}
   m_TextComponent: {fileID: 1214298326203570667}
   m_Placeholder: {fileID: 2210883077782341239}
   m_VerticalScrollbar: {fileID: 0}
@@ -50021,12 +50034,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902827754547209}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -50040,6 +50047,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -50070,19 +50083,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &1419559286182219465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218902827754547214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightVariant: 4+0
 --- !u!1 &218902827756176312
 GameObject:
   m_ObjectHideFlags: 0
@@ -51325,7 +51325,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &218902827803124014
 RectTransform:
   m_ObjectHideFlags: 0
@@ -59107,7 +59107,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &218902827974779594
 RectTransform:
   m_ObjectHideFlags: 0
@@ -60882,8 +60882,8 @@ GameObject:
   - component: {fileID: 218902828015958669}
   - component: {fileID: 218902828015958664}
   - component: {fileID: 218902828015958671}
-  - component: {fileID: 218902828015958670}
   - component: {fileID: 4659681483221867141}
+  - component: {fileID: 598595454057224023}
   m_Layer: 5
   m_Name: number of descents
   m_TagString: Untagged
@@ -60950,7 +60950,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &218902828015958670
+--- !u!114 &4659681483221867141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902828015958668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightVariant: 1
+--- !u!114 &598595454057224023
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60969,7 +60982,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -60981,7 +60994,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -60991,7 +61004,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 218902828015958671}
-  m_TextViewport: {fileID: 218902827150784426}
+  m_TextViewport: {fileID: 218902827079783800}
   m_TextComponent: {fileID: 218902827461904270}
   m_Placeholder: {fileID: 218902827974007527}
   m_VerticalScrollbar: {fileID: 0}
@@ -61011,12 +61024,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902828015958671}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -61030,6 +61037,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -61060,19 +61073,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &4659681483221867141
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218902828015958668}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightVariant: 1
 --- !u!1 &218902828016265767
 GameObject:
   m_ObjectHideFlags: 0
@@ -61321,7 +61321,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 218902828017413627}
   m_TextViewport: {fileID: 218902827005113765}
   m_TextComponent: {fileID: 218902826632733840}
-  m_Placeholder: {fileID: 218902828446750764}
+  m_Placeholder: {fileID: 218902827034498824}
   m_VerticalScrollbar: {fileID: 0}
   m_VerticalScrollbarEventHandler: {fileID: 0}
   m_LayoutGroup: {fileID: 0}
@@ -63293,10 +63293,10 @@ RectTransform:
   m_Father: {fileID: 218902827035021616}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 486.5, y: -376.5}
+  m_SizeDelta: {x: 181, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &218902828057849786
 CanvasRenderer:
@@ -65098,8 +65098,8 @@ GameObject:
   - component: {fileID: 218902828115877453}
   - component: {fileID: 218902828115877448}
   - component: {fileID: 218902828115877455}
-  - component: {fileID: 218902828115877454}
   - component: {fileID: 8586029618115067040}
+  - component: {fileID: 2205561091772331024}
   m_Layer: 5
   m_Name: number of counters
   m_TagString: Untagged
@@ -65166,7 +65166,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &218902828115877454
+--- !u!114 &8586029618115067040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902828115877452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightVariant: 1
+--- !u!114 &2205561091772331024
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -65185,7 +65198,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -65197,7 +65210,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -65207,7 +65220,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 218902828115877455}
-  m_TextViewport: {fileID: 218902827689196965}
+  m_TextViewport: {fileID: 218902827079783800}
   m_TextComponent: {fileID: 218902828604375088}
   m_Placeholder: {fileID: 218902827561615094}
   m_VerticalScrollbar: {fileID: 0}
@@ -65227,12 +65240,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902828115877455}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -65246,6 +65253,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -65276,19 +65289,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &8586029618115067040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218902828115877452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightVariant: 1
 --- !u!1 &218902828118302442
 GameObject:
   m_ObjectHideFlags: 0
@@ -69684,8 +69684,8 @@ GameObject:
   - component: {fileID: 218902828239933564}
   - component: {fileID: 218902828239933567}
   - component: {fileID: 218902828239933566}
-  - component: {fileID: 218902828239933565}
   - component: {fileID: 5224225707050429961}
+  - component: {fileID: 1474166616642373517}
   m_Layer: 5
   m_Name: number of items per sheet
   m_TagString: Untagged
@@ -69752,7 +69752,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &218902828239933565
+--- !u!114 &5224225707050429961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902828239933555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightVariant: 2
+--- !u!114 &1474166616642373517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69771,7 +69784,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -69783,7 +69796,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -69793,7 +69806,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 218902828239933566}
-  m_TextViewport: {fileID: 218902828548124621}
+  m_TextViewport: {fileID: 218902827079783800}
   m_TextComponent: {fileID: 218902828663923736}
   m_Placeholder: {fileID: 218902827297376633}
   m_VerticalScrollbar: {fileID: 0}
@@ -69813,12 +69826,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902828239933566}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -69832,6 +69839,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -69862,19 +69875,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &5224225707050429961
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218902828239933555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightVariant: 2
 --- !u!1 &218902828241078464
 GameObject:
   m_ObjectHideFlags: 0
@@ -73874,10 +73874,10 @@ RectTransform:
   m_Father: {fileID: 218902827035021616}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 832.5, y: -140.5}
+  m_SizeDelta: {x: 181, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &218902828345779438
 CanvasRenderer:
@@ -75761,7 +75761,7 @@ GameObject:
   - component: {fileID: 218902828401766150}
   - component: {fileID: 218902828401766145}
   - component: {fileID: 218902828401766144}
-  - component: {fileID: 218902828401766151}
+  - component: {fileID: 470158259989927008}
   m_Layer: 5
   m_Name: mockup description
   m_TagString: Untagged
@@ -75828,7 +75828,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &218902828401766151
+--- !u!114 &470158259989927008
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -75847,7 +75847,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -75859,7 +75859,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -75889,12 +75889,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902828401766144}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -75908,6 +75902,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -82194,8 +82194,8 @@ GameObject:
   - component: {fileID: 218902828536535685}
   - component: {fileID: 218902828536535680}
   - component: {fileID: 218902828536535687}
-  - component: {fileID: 1672385800511089479}
   - component: {fileID: 8206923381346149544}
+  - component: {fileID: 4220676179685314479}
   m_Layer: 5
   m_Name: mockup format
   m_TagString: Untagged
@@ -82262,7 +82262,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1672385800511089479
+--- !u!114 &8206923381346149544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218902828536535684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rightVariant: .ai
+--- !u!114 &4220676179685314479
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -82281,7 +82294,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -82293,7 +82306,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -82323,12 +82336,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902828536535687}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -82342,6 +82349,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -82372,19 +82385,6 @@ MonoBehaviour:
   m_isRichTextEditingAllowed: 0
   m_LineLimit: 0
   m_InputValidator: {fileID: 0}
---- !u!114 &8206923381346149544
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 218902828536535684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7295f4225ab5b49b40ef6d3cdd6bee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rightVariant: .ai
 --- !u!1 &218902828541208992
 GameObject:
   m_ObjectHideFlags: 0
@@ -85096,7 +85096,7 @@ GameObject:
   - component: {fileID: 218902828612217493}
   - component: {fileID: 218902828612217488}
   - component: {fileID: 218902828612217495}
-  - component: {fileID: 218902828612217494}
+  - component: {fileID: 4235505819817021843}
   - component: {fileID: 1545050338305417697}
   m_Layer: 5
   m_Name: finished product format
@@ -85164,7 +85164,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &218902828612217494
+--- !u!114 &4235505819817021843
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -85183,7 +85183,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 2
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -85195,7 +85195,7 @@ MonoBehaviour:
   m_SpriteState:
     m_HighlightedSprite: {fileID: 0}
     m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 21300000, guid: a3a0109387e96394995bcb74c67693db, type: 3}
     m_DisabledSprite: {fileID: 0}
   m_AnimationTriggers:
     m_NormalTrigger: Normal
@@ -85205,7 +85205,7 @@ MonoBehaviour:
     m_DisabledTrigger: Disabled
   m_Interactable: 1
   m_TargetGraphic: {fileID: 218902828612217495}
-  m_TextViewport: {fileID: 218902828321483478}
+  m_TextViewport: {fileID: 218902827079783800}
   m_TextComponent: {fileID: 218902827494771744}
   m_Placeholder: {fileID: 218902826656031744}
   m_VerticalScrollbar: {fileID: 0}
@@ -85225,12 +85225,6 @@ MonoBehaviour:
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
-      m_Calls: []
-  m_OnSubmit:
-    m_PersistentCalls:
-      m_Calls: []
-  m_OnSelect:
-    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 218902828612217495}
         m_TargetAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
@@ -85244,6 +85238,12 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  m_OnSubmit:
+    m_PersistentCalls:
+      m_Calls: []
+  m_OnSelect:
+    m_PersistentCalls:
+      m_Calls: []
   m_OnDeselect:
     m_PersistentCalls:
       m_Calls: []
