@@ -7,6 +7,8 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
+        ResetScore();
+
         if (instance == null)
         {
             instance = this;
@@ -52,13 +54,9 @@ public class Player : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
-    private void Update()
+    public void ResetScore()
     {
-        if (SceneManager.GetActiveScene().name == "MainMenu") ResetScore();
-    }
-
-    private void ResetScore()
-    {
-        score = defaultScore;
+        showing = map = gallery = false;
+        score = new int[] {5,5,9,0,0,0,8};
     }
 }

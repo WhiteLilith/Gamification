@@ -7,4 +7,9 @@ public class Other : MonoBehaviour
         GameObject gameObject = GameObject.Find(objectName);
         if(gameObject) Destroy(gameObject);
     }
+
+    public void PlayerResetScore()
+    {
+        FindObjectOfType<Player>().ResetScore();
+    }
 }

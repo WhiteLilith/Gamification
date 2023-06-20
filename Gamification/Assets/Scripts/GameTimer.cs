@@ -7,11 +7,11 @@ public class GameTimer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
     [SerializeField] private float time;
-    private static bool _isRunning;
-    private static bool _isTimerRanOut;
+    private bool _isRunning;
+    private bool _isTimerRanOut;
 
-    private static float _minutes, _seconds;
-    private static float _staticTimeLimit;
+    private float _minutes, _seconds;
+    private float _staticTimeLimit;
     
     private void Awake()
     {
@@ -39,17 +39,22 @@ public class GameTimer : MonoBehaviour
         
         timerText.text = $"{_minutes:00}:{_seconds:00}";
     }
-    public static void StartTimer(bool isStart)
+    public void StartTimer()
     {
-        _isRunning = isStart;
+        _isRunning = true;
     }
-    public static void PauseTimer(bool isPause)
+    public void PauseTimer()
     {
-        _isRunning = isPause;
+        _isRunning = false;
     }
-    public static bool IsTimerRunOut()
+    public bool IsTimerRunOut()
     {
         return _isTimerRanOut;
+    }
+
+    public void Reset()
+    {
+        _isTimerRanOut = false;
     }
 
     IEnumerator Result()
