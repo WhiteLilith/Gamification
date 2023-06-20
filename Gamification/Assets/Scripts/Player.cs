@@ -1,8 +1,25 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] private int[] score = {5,4,5,12,7,6,6};
+    private static Player instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    [SerializeField] private int[] defaultScore = {5,5,9,0,0,0,8};
+    private int[] score;
 
     public bool showing, map, gallery;
 
@@ -30,9 +47,18 @@ public class Player : MonoBehaviour
         if (gallery) score[0] += 1;
         if (map) score[0] += 1;
     }
-
     private void Start()
     {
         DontDestroyOnLoad(this);
+    }
+
+    private void Update()
+    {
+        if (SceneManager.GetActiveScene().name == "MainMenu") ResetScore();
+    }
+
+    private void ResetScore()
+    {
+        score = defaultScore;
     }
 }

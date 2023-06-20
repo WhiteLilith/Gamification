@@ -2670,7 +2670,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 9024190286982813591}
-  finalScreen: {fileID: 3612020164694969059}
   time: 3600
 --- !u!1 &386895330
 GameObject:
@@ -21641,7 +21640,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 362162893}
         m_TargetAssemblyTypeName: GameTimer, Assembly-CSharp
         m_MethodName: StartTimer
         m_Mode: 6

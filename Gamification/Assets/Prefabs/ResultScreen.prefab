@@ -862,6 +862,7 @@ RectTransform:
   - {fileID: 3253461551393010179}
   - {fileID: 6447594197029861079}
   - {fileID: 7613884098306843538}
+  - {fileID: 1211451517139763186}
   m_Father: {fileID: 1327819779856821873}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2284,6 +2285,82 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &5055360568305633579
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1211451517139763186}
+  - component: {fileID: 8857422565346802178}
+  - component: {fileID: 7936222766285571095}
+  m_Layer: 0
+  m_Name: FailResult
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1211451517139763186
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5055360568305633579}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 9104299536761520677}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 233, y: -335}
+  m_SizeDelta: {x: 287.59, y: 287.5908}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8857422565346802178
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5055360568305633579}
+  m_CullTransparentMesh: 1
+--- !u!114 &7936222766285571095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5055360568305633579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ee2124a6fd2a3ae41b8c22bfaa7c1cfc, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &5088373573517172477
 GameObject:
   m_ObjectHideFlags: 0
@@ -4268,6 +4345,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: affdfc923b76ed844a84a379a7ce408f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resultText: {fileID: 3735713371094965330}
+  ifWin: "\u0412\u044B \u0443\u0441\u043F\u0435\u0448\u043D\u043E \u0441\u0434\u0430\u043B\u0438
+    \u044D\u043A\u0437\u0430\u043C\u0435\u043D \u043F\u043E \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u043E\u0439
+    \u043A\u0432\u0430\u043B\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u0438."
+  ifFail: "\u041A \u0441\u043E\u0436\u0430\u043B\u0435\u043D\u0438\u044E, \u0412\u044B
+    \u043D\u0435 \u0441\u0434\u0430\u043B\u0438 \u044D\u043A\u0437\u0430\u043C\u0435\u043D
+    \u043F\u043E \u0432\u044B\u0431\u0440\u0430\u043D\u043D\u043E\u0439 \u043A\u0432\u0430\u043B\u0438\u0444\u0438\u043A\u0430\u0446\u0438\u0438."
+  goodMark: {fileID: 8733511727879037112}
+  failMark: {fileID: 5055360568305633579}
   summaryPointAmount: {fileID: 3493380557621313084}
   pointText1: {fileID: 2845571550579653435}
   pointText2: {fileID: 3464611857585396909}
@@ -4288,12 +4374,12 @@ GameObject:
   - component: {fileID: 3751997318922028660}
   - component: {fileID: 7351815585019254195}
   m_Layer: 0
-  m_Name: Result mark
+  m_Name: GoodResult
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7613884098306843538
 RectTransform:
   m_ObjectHideFlags: 0

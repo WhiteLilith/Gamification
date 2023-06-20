@@ -3,6 +3,10 @@ using UnityEngine;
 
 public class PointCollectorSystem : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI resultText;
+    [SerializeField] private string ifWin, ifFail;
+    [SerializeField] private GameObject goodMark, failMark;
+    
     [SerializeField] private TextMeshProUGUI summaryPointAmount;
 
     [SerializeField] private TextMeshProUGUI pointText1;
@@ -18,6 +22,17 @@ public class PointCollectorSystem : MonoBehaviour
     private void OnEnable()
     {
         GetSomePoints();
+
+        if (pointSum >= 34)
+        {
+            goodMark.SetActive(true);
+            resultText.text = ifWin;
+        }
+        else
+        {
+            failMark.SetActive(true);
+            resultText.text = ifFail;
+        }
     }
 
     private void GetSomePoints()

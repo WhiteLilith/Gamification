@@ -1,16 +1,18 @@
+using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameTimer : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI timerText;
-    [SerializeField] private GameObject finalScreen;
     [SerializeField] private float time;
     private static bool _isRunning;
     private static bool _isTimerRanOut;
 
     private static float _minutes, _seconds;
     private static float _staticTimeLimit;
+    
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
@@ -19,15 +21,16 @@ public class GameTimer : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        if (time < 0.3f)
+        if (time < 0.3f && !_isTimerRanOut)
         {
             time = 0;
             _isTimerRanOut = true;
-            finalScreen.SetActive(true);
+            SceneManager.LoadScene("Office2");
+            StartCoroutine(Result());
             return;
         }
 
-        if (_isRunning)
+        if (_isRunning && !_isTimerRanOut)
         {
             time -= Time.fixedDeltaTime;
             _minutes = Mathf.FloorToInt(time / 60);
@@ -47,5 +50,12 @@ public class GameTimer : MonoBehaviour
     public static bool IsTimerRunOut()
     {
         return _isTimerRanOut;
+    }
+
+    IEnumerator Result()
+    {
+        yield return new WaitForSeconds(0.01f);
+        GameObject finalScreen = FindObjectOfType<PointCollectorSystem>(true).gameObject;
+        finalScreen.SetActive(true);
     }
 }

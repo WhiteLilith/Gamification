@@ -27,13 +27,16 @@ public class CheckProcesses : MonoBehaviour
             }
         }
 
+        bool allAlright = true;
         foreach (var answer in rightAnswers)
         {
             if (answer.countedAnswers != answer.countOfAnswers)
             {
-                FindObjectOfType<Player>().ChangeScore(6,-3);
-                return;
+                allAlright = false;
+                break;
             }
         }
+
+        FindObjectOfType<Player>().ChangeScore(6, allAlright ? 6 : 3);
     }
 }
