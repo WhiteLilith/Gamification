@@ -39,7 +39,6 @@ public class TechCardChecker : MonoBehaviour
 
     public void CheckResult()
     {
-        if (messageText.text == "") return;
-        FindObjectOfType<Player>().ChangeScore(4, -4);
+        FindObjectOfType<Player>().ChangeScore(4, messageText.text == "" ? 12 : 8);
     }
 }
